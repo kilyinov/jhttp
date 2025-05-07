@@ -21,7 +21,7 @@ import org.apache.http.util.EntityUtils;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.reflections.Reflections;
+import org.reflections8.Reflections;
 
 import static org.junit.Assert.*;
 
@@ -55,7 +55,6 @@ public class HttpClientTest {
     @Test
     public void testReflection() throws IOException {
         Reflections reflections = new Reflections("com.baeldung.reflections");
-
         Set<Class<? extends Object>> allClasses =
                 reflections.getSubTypesOf(Object.class);
     }
