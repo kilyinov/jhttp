@@ -33,6 +33,7 @@ public class DirectoryListing implements RequestProcessor {
         }
         try {
             Files.list(directory)
+                .sorted()
                 .map(Path::getFileName)
                 .map(Path::toString)
                 .forEach(s -> appendLink(s, uri, writer));
