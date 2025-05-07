@@ -47,12 +47,12 @@ public class HttpClientTest {
         server.stop();
     }
 
-//    @Test
+    @Test
     public void testDirectoryListing() throws IOException {
         testRequest("/", "/http-server/root.html");
     }
 
-//    @Test
+    @Test
     public void testReflection() throws IOException {
         Reflections reflections = new Reflections("com.baeldung.reflections");
 
